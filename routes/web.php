@@ -10,3 +10,4 @@ Route::get('/',[MovieController::class,'index'])->name('index');
 Route::get('/movie/{movie:slug}',[MovieController::class,'show'])->name('movie.show');
 Route::get('/genre',[GenreController::class,'index'])->name('genre.index');
 Route::get('/genre/{genre:slug}',[GenreController::class,'show'])->name('genre.show');
+Route::get('/search',[MovieController::class,'search'])->name('search');
