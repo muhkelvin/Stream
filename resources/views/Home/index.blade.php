@@ -10,5 +10,10 @@
         @empty
             <p class="text-gray-500">No articles found.</p>
         @endforelse
+
     </ul>
+
+    <div class="mt-4">
+        {{ $movies->links() }}
+    </div>
 </x-layout>
